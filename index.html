@@ -1,18 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="assets/css/reset.css">
 <link rel="stylesheet" href="assets/css/style.css">
-<title>Psychic game</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Oswald:300,400,500,600,700" rel="stylesheet">
+<title>Around the world</title>
 </head>
 <body>
-<h1>Psychic Game</h1>
-    <h3>Guess the letter I'm thinking of!</h3>
-    <p id = "wins">Wins:</p>
-    <p id = "losses">Losses:</p>
-    <p id = "guessesLeft">Guesses left:</p>
-    <p>Your guesses so far:</p>
-    <div id = "guesses"></div>
-<script type="text/javascript" src="assets/javascript/game.js"></script>
+<header id = "header">
+      <div class = "container">
+        <div class = "row">
+          <div class = "col-md-12">
+            <img src="https://fontmeme.com/permalink/170711/34ffff04c84e14cdf75b26cab2f09952.png" alt="Jedi Mind Reading" width = "100%">
+          </div>
+      </div>
+    </div>
+    </header>
+    <div class="row" id = "row1">
+      <div class="col-md-1"></div>
+      <div class="col-md-3" id = "globe-div">
+        <div>
+          <img class = "center-block" id = "globe" src="assets/images/globe.gif" alt="globe">
+        </div>
+      </div>
+      <div class="col-md-7" id = "text">
+        <h2>Let's go around the globe!</h2>
+        <br>
+        <p>
+         A journey of a lifetime in 5 minutes! Let's see if you can guess the city I'm thinking of!
+        </p>
+       
+        <p>
+          Have fun and don't forget to take photos!
+        </p>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class = "row" id = "row2">
+      <div class = "col-md-3 col-sm-6 text-center">
+        <h1 id = "wins">0</h1><h4>Success</h4>
+      </div>
+      <div class = "col-md-3 text-center">
+        <h1 id = "losses">0</h1><h4>Failure</h4>
+      </div>
+      <div class = "col-md-3 col-sm-6 text-center">
+        <h1 id = "guessesLeft">10</h1><h4>Attempts Left</h4>
+      </div>
+      <div class = "col-md-3 text-center">
+        <h1 id = "guesses">None</h1><h4>Guessed</h4>
+      </div>
+    </div>
+    <footer class = "footer">
+      <div class="container">
+        <div class="col-12-md text-center">
+          &copy; 2017 Georgi Nenov
+        </div>
+      </div>
+    </footer>
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>
