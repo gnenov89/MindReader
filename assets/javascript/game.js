@@ -10,6 +10,7 @@ var guessesLeftHTML = document.getElementById("guessesLeft")
 var guessesHTML = document.getElementById("guesses");
 console.log("Answer Key: The answer is " + answer + ".");
 window.addEventListener("keyup", (guess) => {
+  //First condition: Check whether the player still has tries left.
   if (guessesLeft <= 0) {
     losses ++;
     lossesHTML.innerHTML = losses;
@@ -24,6 +25,7 @@ window.addEventListener("keyup", (guess) => {
       if (guess.key < "a" || guess.key > "z") {
         alert("Not a letter! We do the letter game - no numbers!");
       } else if (guess.key.toUpperCase() === answer){
+        //Second condition: Check whether the player pressed a letter key.
           wins ++;
           winsHTML.innerHTML = wins;
           alert("Big Success, " + guess.key.toUpperCase() + ", high five!.")
